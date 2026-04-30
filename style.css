@@ -1,60 +1,90 @@
-/* section 2 */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
+/* section 3 */
 body {
-    background-color: #ff8575; 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    color: white;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 40px;
+    color: #333;
 }
 
-.container {
-    width: 90%;
+.table-wrapper {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
     max-width: 1000px;
-    text-align: center;
+    margin: auto;
 }
 
-h1 {
+/* Controls Bar */
+.table-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.table-controls input {
+    border: 1px solid #ccc;
+    padding: 4px 8px;
+    border-radius: 3px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
     margin-bottom: 20px;
+}
+
+th {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 2px solid #eee;
+    font-size: 14px;
     font-weight: bold;
 }
 
-
-table {
-    width: 100%;
-    border-collapse: collapse; 
-    border: 1px solid rgba(255, 255, 255, 0.5);
+td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    font-size: 13px;
 }
 
-th, td {
-    border: 1px solid rgba(255, 255, 255, 0.5); 
-    padding: 17px;
-    text-align: center;
-    font-size: 0.9rem;
+/* Zebra Striping */
+tbody tr:nth-child(even) {
+    background-color: #fcfcfc;
 }
 
-
-thead th {
-    font-size: 0.75rem;
-    text-transform: capitalize;
-    font-weight: normal;
-}
-
-
-tbody td {
-    font-size: 0.8rem;
-    opacity: 0.9;
-
-}
-
-/* Subtle hover effect */
 tbody tr:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #f1f1f1;
 }
+
+/* Footer & Pagination */
+.table-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+}
+
+.pagination button {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    margin-left: -1px;
+    cursor: pointer;
+    color: #007bff;
+}
+
+.pagination button.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.pagination button:disabled {
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+
