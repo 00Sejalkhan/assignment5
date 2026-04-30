@@ -1,86 +1,60 @@
-/* General Reset */
+/* section 2 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    padding: 20px;
-}
-
-.table-container {
-    width: 100%;
-    max-width: 900px;
-    margin: auto;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-
-.table-header {
-    background-color: #3e818d;
+    background-color: #ff8575; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     color: white;
-    text-align: center;
-    padding: 15px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    letter-spacing: 1px;
 }
 
-/* Table Styling */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+
 table {
     width: 100%;
-    border-collapse: collapse;
-    background-color: #e6f7f8; /* Light blue background */
+    border-collapse: collapse; 
+    border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-/* Column Headers */
-thead th {
-    background-color: #c9eef0;
-    color: #555;
-    text-align: left;
-    padding: 12px;
-    font-size: 0.85rem;
-    font-weight: normal;
-    border-bottom: 1px solid #b2d8da;
-}
-
-
-td {
-    padding: 15px 12px;
-    border-bottom: 1px solid #d1eced;
-    vertical-align: middle;
-    color: #333;
+th, td {
+    border: 1px solid rgba(255, 255, 255, 0.5); 
+    padding: 17px;
+    text-align: center;
     font-size: 0.9rem;
 }
 
-.profile-pic {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    object-fit: cover;
-    display: block;
-    border: 2px solid #fff;
+
+thead th {
+    font-size: 0.75rem;
+    text-transform: capitalize;
+    font-weight: normal;
 }
 
-/* Comments Column width */
-.comment {
-    max-width: 300px;
-    line-height: 1.4;
+
+tbody td {
     font-size: 0.8rem;
-    color: #4a6b6d;
+    opacity: 0.9;
+
 }
 
-
+/* Subtle hover effect */
 tbody tr:hover {
-    background-color: #d8f1f3;
+    background-color: rgba(255, 255, 255, 0.1);
 }
-
-
-.profile{
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    object-fit: cover;
-    display: block;
-    border: 2px solid #fff;
-}
-
